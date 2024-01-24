@@ -49,7 +49,7 @@ h1{text-align:center;color:#000000;font-size:24px!important}
 
 .wrap{padding:40px;-webkit-transition:width .3s ease-in-out;transition:width .3s ease-in-out}
 
-@media only screen and (min-width:1px) and (max-width:575px){.wrap{width:100%}}form{width:100%;margin-bottom:20px}
+/* @media only screen and (min-width:1px) and (max-width:575px){.wrap{width:100%}}form{width:100%;margin-bottom:20px} */
 
 @-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}
 
@@ -65,7 +65,7 @@ input{outline:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 
 input:focus{outline:0}
 
-input[type=password],input[type=text]{width:100%; border-bottom: 2px none rgb(0, 0, 0);  background-color: rgba(255, 255, 255, 0.763);height:44px;padding:3px 20px 3px 40px;margin-bottom:20px;border-radius:0px;background-color:rgba(230, 230, 230, 0.906);-webkit-transition:-webkit-box-shadow .3s ease-in-out;transition:-webkit-box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out}
+input[type=password],input[type=text]{width:100%; border-bottom: 2px none rgb(0, 0, 0);  background-color: rgba(255, 255, 255, 0.925);height:44px;padding:7px 15px 7px 15px;margin-bottom:20px;border-radius:0px;background-color:rgba(230, 230, 230, 0.906);-webkit-transition:-webkit-box-shadow .3s ease-in-out;transition:-webkit-box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out;transition:box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out}
 
 input[type=password]:focus,input[type=text]:focus{-webkit-box-shadow:0 0 5px 0 rgb(255, 255, 255,);box-shadow:0 0 5px 0 rgb(255, 255, 255)}
 
@@ -124,7 +124,7 @@ table td:first-child{font-weight:700}
 }
 
 body {
-    background-image: url(../img/Background.jpg);
+    background-image: url(../img/klothok.jpg);
     background-position: center;
     height: 100%;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ body {
 }
 
 .gradient-top {
-    background: linear-gradient(#1A9675, rgba(0, 0, 0, 0.200) 50%, rgba(0, 0, 0, 0.200) 50%, #70C3FF  ); 
+    background: linear-gradient(#1A9675, rgba(255, 255, 255, 0.300) 50%,  #70C3FF  ); 
     height: 100%;   
     width: 100%;
 }
@@ -196,7 +196,7 @@ form .submit-button {
 
 }
 .ie-fixMinHeight .main-login .wrap {
-    background-color: #ffffffa8;
+    background-color: #f0f0f0b8;
     border-radius: 72px;
     border: 3px;
     backdrop-filter: blur(10px);
@@ -241,6 +241,8 @@ form .submit-button {
 
 .img-bottom {
    margin: 50px;
+   display: flex;
+   gap: 10px;
 }
 
 .img-bottom .logo3 {
@@ -251,4 +253,87 @@ form .submit-button {
 .img-bottom .logo4 {
     height: 51px;
     width: 148px;
+}
+
+@media screen and (max-width:575px) {
+    form .title-card {
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+        color: var(--primaryTextColor);
+    
+    }
+    
+    form .sub-title {
+        margin: auto;
+        font-size: 12px;
+        line-height: 40px;
+        color: var(--primaryTextColor);
+    }
+    
+    form .placeholder-card {
+        color: var(--secondaryTextColor);
+        line-height: 40px;
+        font-size: 12px;
+    
+    }
+
+    /* Img Top */
+
+    .img-top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+    }
+    
+    .img-top .logo1 {
+        width: 83px;
+        height: 40px;
+    }
+    
+    .img-top .line {
+        background-color: white;
+        height: 37px;
+        width: 3px;
+    }
+    
+    .img-top .logo2 {
+        width: 99px;
+        height: 59px;
+    }
+
+    .wrap {
+        padding: 30px;
+    }
+
+    .img-bottom {
+        margin: 50px;
+        display: flex;
+        gap: 10px;
+     }
+     
+     .img-bottom .logo3 {
+         height: 42px;
+         width: 97px;
+     }
+     
+     .img-bottom .logo4 {
+         height: 31px;
+         width: 90px;
+     }
+
+     .main{min-height:calc(100vh - 20px);width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .main-login{min-height:calc(78vh - 20px);width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    
+    }
 }
